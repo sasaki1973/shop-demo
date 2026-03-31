@@ -2,23 +2,74 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>限定オリジナルマグカップ | ShopGuild Demo</title>
     <style>
-        body { font-family: sans-serif; padding: 50px; text-align: center; }
-        .product { max-width: 400px; margin: auto; border: 1px solid #eee; padding: 20px; }
-        img { width: 100%; }
-        .price { font-size: 20px; font-weight: bold; margin: 15px 0; }
-        #shopguild-simple { margin: 20px 0; }
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            background-color: #f4f7f6; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        .product-card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            max-width: 400px; 
+            width: 90%; 
+            text-align: center;
+        }
+        img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+        }
+        h1 { 
+            font-size: 22px; 
+            color: #333; 
+            margin: 10px 0; 
+        }
+        .price { 
+            font-size: 26px; 
+            font-weight: bold; 
+            color: #2c3e50; 
+            margin: 15px 0; 
+        }
+        .description { 
+            font-size: 14px; 
+            color: #7f8c8d; 
+            line-height: 1.6; 
+            margin-bottom: 25px; 
+        }
+        /* ShopGuildのボタンがここに自動挿入される想定のエリア */
+        #shopguild-simple { 
+            min-height: 60px; 
+            border: 2px dashed #bdc3c7; 
+            border-radius: 8px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            color: #bdc3c7; 
+            font-weight: bold; 
+        }
     </style>
 </head>
 <body>
-    <div class="product">
-        <img src="https://images.unsplash.com/photo-1514228742587-6b1558fbed20?w=400" alt="マグカップ">
+    <div class="product-card">
+        <img src="https://picsum.photos/id/429/600/600" alt="マグカップ">
         <h1>限定オリジナルマグカップ</h1>
         <p class="price">¥2,500</p>
-        <p>バリエーションなし、低価格（審査不要）のテスト用商品です。</p>
+        <p class="description">
+            朝のコーヒータイムを彩る、シンプルで飽きのこないデザイン。<br>
+            バリエーションなしの単一商品テスト用です。
+        </p>
         
-        <div id="shopguild-simple">ここにShopGuildボタンが出現</div>
+        <div id="shopguild-simple">ShopGuild Button Area</div>
     </div>
 </body>
 </html>
