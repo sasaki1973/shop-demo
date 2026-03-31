@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プレミアム・レザースニーカー | ShopGuild Demo</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; line-height: 1.6; margin: 0; padding: 20px; background: #f9f9f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); display: flex; gap: 30px; }
+        .image-sec { flex: 1; }
+        .info-sec { flex: 1; }
+        img { width: 100%; border-radius: 8px; }
+        .brand { color: #888; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+        h1 { margin: 10px 0; font-size: 28px; }
+        .price { font-size: 24px; color: #d32f2f; font-weight: bold; margin: 20px 0; }
+        .option-label { font-weight: bold; margin-top: 20px; display: block; }
+        .swatches, .sizes { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+        .swatch { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #ddd; cursor: pointer; }
+        .size-btn { border: 1px solid #ddd; padding: 8px 15px; border-radius: 4px; cursor: pointer; background: white; }
+        .size-btn:hover { border-color: #333; }
+        .description { margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px; font-size: 14px; color: #666; }
+        /* ここにShopGuildのボタンが挿入される想定 */
+        #shopguild-injection-point { margin-top: 30px; min-height: 50px; background: #fffde7; border: 1px dashed #ffd54f; text-align: center; line-height: 50px; color: #f57f17; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-sec">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500" alt="スニーカー">
+        </div>
+        <div class="info-sec">
+            <span class="brand">Artisan Collection</span>
+            <h1>プレミアム・レザースニーカー</h1>
+            <p class="price">¥32,800 <small>(税込)</small></p>
+            
+            <label class="option-label">カラー</label>
+            <div class="swatches">
+                <div class="swatch" style="background: #222;" title="ブラック"></div>
+                <div class="swatch" style="background: #8d6e63;" title="ブラウン"></div>
+                <div class="swatch" style="background: #eee;" title="ホワイト"></div>
+            </div>
+
+            <label class="option-label">サイズ (JP)</label>
+            <div class="sizes">
+                <button class="size-btn">25.0</button>
+                <button class="size-btn">26.0</button>
+                <button class="size-btn">27.0</button>
+                <button class="size-btn">28.0</button>
+            </div>
+
+            <div id="shopguild-injection-point">ここにShopGuildボタンが出現</div>
+
+            <div class="description">
+                職人が一足ずつ手作りした最高級レプリカ。3万円超えのため、ShopGuildの審査ロジック発動テスト用です。
+            </div>
+        </div>
+    </div>
+</body>
+</html>
